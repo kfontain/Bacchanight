@@ -22,13 +22,6 @@
 \renewcommand{\thesection}{\arabic{section}}
 
 %-------------------------------------------------------------------------------
-% TODO
-%-------------------------------------------------------------------------------
-
-%% Améliorer le cahier des charges pour la semaine prochaine.
-
-
-%-------------------------------------------------------------------------------
 % TITLE PAGE
 %-------------------------------------------------------------------------------
 
@@ -77,20 +70,31 @@ du musée des beaux arts : \textbf{Drupal 7}. \\
 
 Le site doit permettre l'accès aux informations suivantes :
 \begin{itemize}
-	\item Description de la soirée (date et lieu).
+	\item Description de la soirée.
+	\item Date et lieu.
 	\item Programme/Planning de la soirée.
 	\item Historique des sessions précédentes.
 	\item Plan d'accès Google Maps.
 	\item Contact, lien vers les réseaux sociaux du Musée des Beaux Arts.
 \end{itemize}
 
+\vspace{0.5cm}
+
 L'ensemble des informations ci-dessus doit être modifiable par une personne
 ayant accès au CMS Drupal. \\
-%% Détailler, comment, facile ? difficile ?, mise en page ou pas ? Avoir à coder
-%% ou pas ?
-%% Donner le moins possible de contrôle à l'utilisateur.
-%%
 
+\begin{itemize}
+	\item La description est un champ texte modifiable via Drupal.
+	\item La date et le lieu seront inclus dans la description.
+	\item Le programme/planning est affiché grâce à un module de Drupal et est
+	modifiable via ce même module.
+	\item L'historique des sessions précédentes est représenté par un carousel
+	(module Drupal) montrant des images des événements passés.
+	\item Le plan d'accès Google Maps est fait par un module de Drupal.
+	L'adresse est modifiable en utilisant le module.
+	\item Les liens vers les réseaux sociaux sont fait par des boutons/icones,
+	crées et modifiables via un module Drupal.
+\end{itemize}
 
 \subsection*{Hébergement}
 Prise de contact avec la Mairie de Bordeaux, actuellement chargée de
@@ -106,18 +110,16 @@ d'intégrer le site au site actuel du musée devra être fourni.
 % Besoins non fonctionnels
 %-------------------------------------------------------------------------------
 
-\newpage
-
 \section{Besoins non fonctionnels}
 
 \subsection*{Charte graphique}
 
 Le site doit respecter le code couleur de la soirée :
-%% Les couleurs doivent être modifiables par le user.
 \begin{itemize}
-	\item mauve (\#e37fff)
-	\item rose  (\#f213a4)
+	\item mauve (code)
+	\item rose  (code)
 \end{itemize}
+Les couleurs seront modifiables à partir de Drupal. \\
 
 Le site est sous un format One Page. Un site One Page est un site constitué
 d'une seule et même page sur laquelle l'ensemble des informations du site web
@@ -129,17 +131,16 @@ Le site doit être accessible à partir des navigateurs pour ordinateur
 couramment utilisés :
 %% Ajouter les numéros de versions.
 \begin{itemize}
-	\item Google Chrome
-	\item Mozilla Firefox
-	\item Internet Explorer
-	\item Safari
-	\item Opera
+	\item Google Chrome 54+ (à test)
+	\item Mozilla Firefox 51.0+ (à test)
+	\item Internet Explorer 11.0 (à test)
+	\item Safari 10.0+ (à test)
 \end{itemize}
 
 Le site doit être accessible à partir des navigateurs pour smartphone
 couramment utilisés :
 \begin{itemize}
-	\item Safari
+	\item Safari (à test)
 	\item Google Chrome
 	\item Mozilla Firefox
 \end{itemize}
@@ -149,22 +150,18 @@ Le site doit s'adapter à la taille de l'écran.
 
 \subsection*{Léger}
 Le site doit se charger en moins de X secondes, en utilisant une connection à
-X ko/s.
+X ko/s. (à tester)
 
 %-------------------------------------------------------------------------------
 % Retro planning
 %-------------------------------------------------------------------------------
 
-Version statique pour le 21 Mars.
-%% Créer un nouveau dépôt
-%% Fixer des priorités.
-%% Préciser les versions etc...
-%% Contrainte d'accessibilité
-%% Compléter le retro planning
-%% Qu'est-ce qu'on pourrait faire avec plus de temps, argent, moyen etc...
-%% Faire le retro planning
-%% Diagramme de Gantt
-%% github : GuillaumeBlin
+\section{Retro planning}
+
+\begin{itemize}
+	\item Version statique pour avant le 21 Mars. (priorité haute)
+	\item Version pérenne pour la fin du semestre. (mi-Avril, à confirmer)
+\end{itemize}
 
 %-------------------------------------------------------------------------------
 % Maquette
