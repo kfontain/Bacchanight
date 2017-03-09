@@ -59,22 +59,21 @@
 
 \section{Présentation}
 
-La Baccanight est une soirée organisée par le Musée des Beaux Arts de Bordeaux.
-Elle a pour but de mettre en avant le musée et ses oeuvres à un publique plus jeune.
-Le but de ce projet est d'élaborer un outil permettant de mieux renseigner les internautes.
+La Baccha-night, du mot « bacchanales », fêtes mythologiques en l’honneur du dieu du vin Bacchus, est un évènement nocturne étudiant proposé par le musée des Beaux-Arts de Bordeaux le mardi 21 mars 2017.
+Le but de ce projet est d'élaborer un outil permettant de mieux renseigner les internautes sur la soirée (programme, accès, réseaux sociaux, etc.).
 
 \section{Besoins fonctionnels}
 
 Le site doit utiliser le même système de gestion du contenu que le site actuel
-du musée des beaux arts : \textbf{Drupal 7}. \\
+du Musée des Beaux Arts : \textbf{Drupal 7}. \\
 
 Le site doit permettre l'accès aux informations suivantes :
 \begin{itemize}
-	\item Description de la soirée.
-	\item Date et lieu.
-	\item Programme/Planning de la soirée.
-	\item Historique des sessions précédentes.
-	\item Plan d'accès Google Maps.
+	\item Description de la soirée,
+	\item Date et lieu,
+	\item Programme/Planning de la soirée,
+	\item Historique des sessions précédentes,
+	\item Plan d'accès Google Maps,
 	\item Contact, lien vers les réseaux sociaux du Musée des Beaux Arts.
 \end{itemize}
 
@@ -86,14 +85,14 @@ ayant accès au CMS Drupal. \\
 \begin{itemize}
 	\item La description est un champ texte modifiable via Drupal.
 	\item La date et le lieu seront inclus dans la description.
-	\item Le programme/planning est affiché grâce à un module de Drupal et est
-	modifiable via ce même module.
+	\item Le programme/planning est un champ texte qui sera modifiable via Drupal.
 	\item L'historique des sessions précédentes est représenté par un carousel
 	(module Drupal) montrant des images des événements passés.
 	\item Le plan d'accès Google Maps est fait par un module de Drupal.
 	L'adresse est modifiable en utilisant le module.
 	\item Les liens vers les réseaux sociaux sont fait par des boutons/icones,
 	crées et modifiables via un module Drupal.
+	\item L'ensemble de ces éléments peuvent être réarrangés dans n'importe quel ordre grâce au système de blocs de Drupal.
 \end{itemize}
 
 \subsection*{Hébergement}
@@ -114,12 +113,7 @@ d'intégrer le site au site actuel du musée devra être fourni.
 
 \subsection*{Charte graphique}
 
-Le site doit respecter le code couleur de la soirée :
-\begin{itemize}
-	\item mauve (code)
-	\item rose  (code)
-\end{itemize}
-Les couleurs seront modifiables à partir de Drupal. \\
+En ce qui concerne la charte graphique, le musée des Beaux Arts de Bordeaux nous a transmis un document (disponible en annexe) regroupant tous les éléments graphiques (images, polices, logos, etc.) que nous avons intégrés au site.
 
 Le site est sous un format One Page. Un site One Page est un site constitué
 d'une seule et même page sur laquelle l'ensemble des informations du site web
@@ -127,26 +121,34 @@ est disponible en scrollant (ou à l'aide d'une barre de navigation).
 
 \subsection*{Accessibilité}
 
-Le site doit être accessible à partir des navigateurs pour ordinateur
-couramment utilisés :
+Le site doit être accessible à partir des navigateurs suivants (toutes plateformes confondues):
 %% Ajouter les numéros de versions.
+\begin{center}
+	\begin{tabular}{|l | r|} 
+		\hline
+		Navigateurs & Parts de marché \\ 
+		\hline
+		\hline
+		Google Chrome 54+ & 51\%  \\ 			
+		\hline
+		Mozilla Firefox 51.0+ & 7,4\% \\		
+		\hline
+		Safari (Apple) 10.0+ & 18,3\% \\ 
+		\hline
+		Microsoft Edge / IE 11.0 & 10,8\% \\
+		\hline
+	\end{tabular}
+\end{center}
+Ces navigateurs ont été sélectionnés à partir de leur pourcentage de parts de marché (toutes supérieures à 5\%). Ce pourcentage est une moyenne des pourcentages recueillis sur les sites suivants:
 \begin{itemize}
-	\item Google Chrome 54+ (à test)
-	\item Mozilla Firefox 51.0+ (à test)
-	\item Internet Explorer 11.0 (à test)
-	\item Safari 10.0+ (à test)
-\end{itemize}
-
-Le site doit être accessible à partir des navigateurs pour smartphone
-couramment utilisés :
-\begin{itemize}
-	\item Safari (à test)
-	\item Google Chrome
-	\item Mozilla Firefox
+	\item StatCounter
+	\item Net MarketShare
+	\item W3Counter
+	\item Akamai
 \end{itemize}
 
 \subsection*{Responsive}
-Le site doit s'adapter à la taille de l'écran.
+Puisque le site doit être accessible depuis plusieurs plateformes, le site doit s'adapter à la taille de l'écran.
 
 \subsection*{Léger}
 Le site doit se charger en moins de X secondes, en utilisant une connection à
