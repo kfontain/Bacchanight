@@ -22,7 +22,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 20px; 
 }
 
 .lead {
@@ -199,4 +199,8 @@ img{
 
 .header{
 	width: 100vw;
+}
+
+.rose {
+	color: E72A7B;
 }
