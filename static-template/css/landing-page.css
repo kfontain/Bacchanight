@@ -204,3 +204,12 @@ img{
 .rose {
 	color: E72A7B;
 }
+
+.list-img img{
+	display: inline-block;
+	width: 14%;
+}
+
+.social {
+	text-align: center;
+}
