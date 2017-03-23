@@ -9,4 +9,4 @@ Groupe :
 
 Accès au site:
 
-cd /net/www/gcharlet001/drupal-7.52
+cd /net/www/gcharlet001/bacchanight
