@@ -9,8 +9,4 @@ Groupe :
 
 Accès au site:
 
-/bin/nss-force-update
-
-newgrp baccanight
-
 cd /net/www/gcharlet001/drupal-7.52
