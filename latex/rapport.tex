@@ -100,43 +100,65 @@ Le prototype ainsi obtenu est disponible en annexe.
 
 \subsection{Choix des technologies}
 
-Le site doit utiliser le même système de gestion du contenu que le site actuel
-du Musée des Beaux Arts : \textbf{Drupal 7}. \\
-Cela inclut une nouvelle dimension au projet: celle de produire quelque chose
-qui soit facilement exportable, afin que la finalité du projet, qui est la mise
-en ligne de la page web soit réalisée. Il nous a donc fallu penser à un système
-extrêmement simple, qui recquiert un minimum de fichiers, de manipulations pour
-qu'en aucun cas les éléments nouveaux viennent perturber ou alourdir
-l'installation actuelle.
+Afin de faciliter le déploiment et la mise en ligne de notre travail, utiliser la
+même technologie que le site actuel du Musée des Beaux Arts est le plus simple.
+Nous avons ainsi décider d'utiliser le même système de gestion du contenu
+\textbf{Drupal 7}. \\
+Cela ajoute une nouvelle difficulté au projet: Notre produit doit être facilement
+exportable, afin que la mise en ligne de la page web soit réalisable.
 
 Le site doit permettre l'accès aux informations suivantes :
 \begin{itemize}
 	\item Description de la soirée,
 	\item Date et lieu,
-	\item Programme/Planning de la soirée,
-	\item Historique des sessions précédentes,
-	\item Plan d'accès Google Maps,
+	\item Programme de la soirée,
+	\item Photos de l'événement,
+	\item Remerciements et Partenaires,
 	\item Contact, lien vers les réseaux sociaux du Musée des Beaux Arts.
 \end{itemize}
 
 \vspace{0.5cm}
 
-L'ensemble des informations ci-dessus doit être modifiable par une personne
-ayant accès au CMS Drupal. \\
+\subsection{Champs modifiables}
 
-\subsection*
-\begin{itemize}
-	\item La description est un champ texte modifiable via Drupal.
-	\item La date et le lieu seront inclus dans la description.
-	\item Le programme/planning est un champ texte qui sera modifiable via Drupal.
-	\item L'historique des sessions précédentes est représenté par un carousel
-	(module Drupal) montrant des images des événements passés.
-	\item Le plan d'accès Google Maps est fait par un module de Drupal.
-	L'adresse est modifiable en utilisant le module.
-	\item Les liens vers les réseaux sociaux sont fait par des boutons/icones,
-	crées et modifiables via un module Drupal.
-	\item L'ensemble de ces éléments peuvent être réarrangés dans n'importe quel ordre grâce au système de blocs de Drupal.
-\end{itemize}
+\subsubsection{Description de la soirée}
+
+La description de la soirée est un champ texte stocké par Drupal. Il est
+modifiable par une personne ayant les droits d'administration sur Drupal.
+Seulement quelques balises HTML sont autorisées, les autres sont ignorées.
+(à compléter)...
+
+\subsubsection{Date et heure}
+
+La description de la soirée est un champ texte stocké par Drupal. Il est
+modifiable par une personne ayant les droits d'administration sur Drupal.
+L'utilisateur n'a aucun contrôle sur la forme prise par la date, mise à part la
+façon dont il insère la date. \\
+\textbf{exemple :} DD/MM/YYYY ou Day DD Month YYYY. \\
+
+L'heure est un autre champ texte, stocké et modifiable de la même façon que la
+date.
+L'utilisateur n'a, là aussi, aucun contrôle sur la forme au-delà de la façon
+dont l'heure est insérée dans le champ texte.
+\textbf{exemple :} HH : MM - HH : MM \\
+
+\subsubsection{Programme}
+
+Le programme est généré à partir d'un fichier texte que l'administrateur
+uploadera? à partir du pannel d'administration de Drupal. \\
+Le fichier devra être rédigé de la façon suivante :
+\begin{verbatim}
+	l.1 Horaires de l'événement 1
+	l.2 Titre de l'événement 1
+	l.3 Description de l'événement 1
+	l.4 Emplacement de l'événement 1 (G ou M)
+	l.5 (Vide)
+	l.6 Horaires de l'événement 2
+	l.7 Titre de l'événement 2
+	l.8 etc...
+\end{verbatim}
+
+\subsubsection{Date et heure}
 
 \subsection*{Hébergement}
 Prise de contact avec la Mairie de Bordeaux, actuellement chargée de
