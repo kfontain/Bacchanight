@@ -1,0 +1,36 @@
+.is-hidden{
+  display: none;
+}
+
+.picture-container{
+  /*** feel free to change size ***/
+  background-color: #0925b370;
+  position: relative;
+  width: 75%;
+  height: 100vh;
+  overflow: hidden;
+
+  &::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    content: '';
+    background: inherit;
+    z-index: 1;
+  }
+
+  &__picture{
+    width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--duotone{
+    filter:  url(#duotone);
+  }
+}
