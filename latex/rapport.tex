@@ -147,32 +147,32 @@ pour les bannières \textbf{Programme}, \textbf{Galerie}, \textbf{Contact} et
 \textbf{Partenaires}. L'effet bichromie est obtenu automatiquement ? L'effet
 bichromie n'est pas automatique, vous devez l'appliquer à la main. ?
 Ce champ image est stocké et est modifiable via Drupal. \\
-Les extensions acceptées sont les suivantes : \textbf{png, gif, jpg, jpeg}.
+Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
 \subsubsection{Image description}
 
 Cette image est affichée à gauche du texte de description. Lorsqu'un utilisateur
 passe son curseur sur l'image, celle-ci passe en couleur. Cet effet est automatique.
 Ce champ image est stocké et est modifiable via Drupal. \\
-Les extensions acceptées sont les suivantes : \textbf{png, gif, jpg, jpeg}.
+Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
 \subsubsection{Description}
 
-La description de la soirée est un champ texte stocké par Drupal. Il est
-modifiable par une personne ayant les droits d'administration sur Drupal.
-Seulement quelques balises HTML sont autorisées, les autres sont ignorées.
+La description de la soirée est un champ texte long géré par Drupal.
+Seulement quelques balises HTML sont autorisées, les autres seront ignorées.
 (à compléter)...
 
 \subsubsection{Programme}
 
 Le programme est généré à partir d'un fichier texte que l'administrateur
-uploadera? à partir du pannel d'administration de Drupal. \\
-Le fichier devra être rédigé de la façon suivante :
+téléchargera vers du pannel d'administration de Drupal. \\
+Une seule extension est acceptée : \textbf{txt}.
+Le fichier txt devra être rédigé de la façon suivante :
 \begin{verbatim}
 	l.1 Horaires de l'événement 1
 	l.2 Titre de l'événement 1
 	l.3 Description de l'événement 1
-	l.4 Emplacement de l'événement 1 (G ou M)
+	l.4 Emplacement de l'événement 1 [G] ou [M]
 	l.5 (Laisser une ligne vide)
 	l.6 Horaires de l'événement 2
 	l.7 Titre de l'événement 2
@@ -183,18 +183,24 @@ Le fichier devra être rédigé de la façon suivante :
 
 Cette image est affichée à droite de la section \textbf{Programme}. De même que
 pour \textbf{l'Image Description}, l'effet couleur est automatique.
-Ce champ image est stocké et est modifiable via Drupal.
+Ce champ image est stocké et est modifiable via Drupal. \\
+Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
 \subsubsection{En continu}
 
 La section \textbf{En continu} est géré de la même façon que le \textbf{Programme}.
-Les fichiers texte générant ces deux sections sont rédigés de la même façon.
-Un fichier correspond à une seule section du Programme. Il faut donc deux fichiers
-texte, un pour le "Programme" et un pour le "En continu".
+Les fichiers texte générant ces deux sections utilisent la même syntaxe et se
+rédigent de la même façon. Un fichier correspond à une seule section du Programme.
+Il faut donc deux fichiers texte, un pour le "Programme" et un pour le "En continu".
+De même que pour le programme, seul l'extension \textbf{txt} est acceptée.
 
 \subsubsection{Galeries}
 
-Ces images seront affichées dans la section \textbf{Galeries} du site. TODO.
+Ces images seront affichées dans la section \textbf{Galeries} du site. Elles sont
+stockées dans un champ image de Drupal dans lequel il est possible de télécharger
+individuellement plusieurs images, avec une limite de 10 images maximum.
+Il est possible de les réordonner ou supprimer individuellement. \\
+Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
 \subsubsection{Captcha Key}
 
@@ -202,11 +208,16 @@ TODO.
 
 \subsubsection{Texte partenaire}
 
-TODO.
+Le texte de remerciements des partenaires est affiché dans la section
+\textbf{Contact} du site. Il est stocké dans un champ texte long par Drupal. \\
+A COMPLETER.
 
 \subsubsection{Image partenaire}
 
-TODO.
+Cette image est affichée dans la section \textbf{Contact} du site. Elle se place
+juste en-dessous du texte destiné aux remerciements des partenaires.
+L'image est stockée dans un champ image de Drupal.
+Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
 \subsubsection{Date et heure}
 
@@ -224,11 +235,17 @@ dont l'heure est insérée dans le champ texte.
 
 \subsubsection{Contact téléphone}
 
-TODO.
+Le numéro de téléphone de contact est affiché dans la partie informations de
+contact dans la section \textbf{Contact}, en bas de page. \\
+Le numéro de téléphone est stocké dans un champ texte par Drupal, d'une taille
+maximale de 20 caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
 
 \subsubsection{Contact mail}
 
-TODO.
+L'adresse mail de contact est affichée dans la partie informations de
+contact dans la section \textbf{Contact}, en bas de page. \\
+L'adresse mail de contact est stockée dans un champ texte par Drupal, d'une taille
+maximale de 255 caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
 
 \subsubsection{Réseaux sociaux}
 
@@ -236,7 +253,9 @@ TODO.
 
 \subsubsection{Copyright}
 
-TODO.
+Le texte de copyright est affiché tout en bas de page. \\
+Il est stocké dans un champ texte par Drupal, d'une taille maximale de 255
+caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
 
 %-------------------------------------------------------------------------------
 % Besoins non fonctionnels
