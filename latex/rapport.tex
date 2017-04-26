@@ -142,9 +142,9 @@ fonctionnels du site, tout en essayant de rester au plus proche de l'aspect
 graphique retenu.
 
 
-\subsection{Champs modifiables}
+\section{Champs modifiables}
 
-\subsubsection{Couleur principale}
+\subsection{Couleur principale}
 
 La couleur principale est décrite par un champ texte d'une longueur maximale de
 7 caractères. La couleur est exprimée en hexadécimal de la façon suivante :
@@ -159,57 +159,60 @@ Cette couleur est utilisée pour les éléments suivants de la page :
 	\item La partie basse de l'effet dégradé en bas de page.
 \end{itemize}
 
-\subsubsection{Couleur niveau de gris}
+\subsection{Couleur secondaire}
 
-TODO.
+La couleur secondaire est définie de la même façon que la couleur principale.
+Cette couleur est utilisée pour l'élément suivant de la page :
+\begin{itemize}
+	\item La partie haute de l'effet dégradé en bas de page.
+\end{itemize}
 
-\subsubsection{Image fond}
+\subsection{Image fond}
 
 L'image de fond est utilisé comme image d'en-tête. Elle est également utilisé
 pour les bannières \textbf{Programme}, \textbf{Galerie}, \textbf{Contact} et
-\textbf{Partenaires}. L'effet bichromie est obtenu automatiquement ? L'effet
-bichromie n'est pas automatique, vous devez l'appliquer à la main. ?
+\textbf{Partenaires}. L'effet de bichromie n'est pas obtenu automatiquement , il
+est nécessaire de le faire à la main. \\
 Ce champ image est stocké et est modifiable via Drupal. \\
 Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
-\subsubsection{Image description}
+\subsection{Image description}
 
 Cette image est affichée à gauche du texte de description. Lorsqu'un utilisateur
 passe son curseur sur l'image, celle-ci passe en couleur. Cet effet est automatique.
 Ce champ image est stocké et est modifiable via Drupal. \\
 Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
-\subsubsection{Description}
+\subsection{Description}
 
 La description de la soirée est un champ texte long géré par Drupal.
-Seulement quelques balises HTML sont autorisées, les autres seront ignorées.
-(à compléter)...
+Seules les balises HTML suivantes autorisées : \textbf{<strong> <br> <p>}.
 
-\subsubsection{Programme}
+\subsection{Programme}
 
 Le programme est généré à partir d'un fichier texte que l'administrateur
 téléchargera vers du pannel d'administration de Drupal. \\
-Une seule extension est acceptée : \textbf{txt}.
+Une seule extension de fichier est acceptée : \textbf{txt}.
 Le fichier txt devra être rédigé de la façon suivante :
 \begin{verbatim}
-	l.1 Horaires de l'événement 1
+	l.1 Horaires de l'événement 1 (\textbf{ex :} 00h00 à 23h59)
 	l.2 Titre de l'événement 1
-	l.3 Description de l'événement 1
-	l.4 Emplacement de l'événement 1 [G] ou [M]
+	l.3 Description de l'événement 1 (Ne pas revenir à la ligne avec entrée, même si la description fait plus d'une ligne.)
+	l.4 Emplacement de l'événement 1 G ou M (Les [ ] sont mises automatiquement.)
 	l.5 (Laisser une ligne vide)
 	l.6 Horaires de l'événement 2
 	l.7 Titre de l'événement 2
 	l.8 etc...
 \end{verbatim}
 
-\subsubsection{Image Programme}
+\subsection{Image Programme}
 
 Cette image est affichée à droite de la section \textbf{Programme}. De même que
 pour \textbf{l'Image Description}, l'effet couleur est automatique.
 Ce champ image est stocké et est modifiable via Drupal. \\
 Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
-\subsubsection{En continu}
+\subsection{En continu}
 
 La section \textbf{En continu} est géré de la même façon que le \textbf{Programme}.
 Les fichiers texte générant ces deux sections utilisent la même syntaxe et se
@@ -217,7 +220,7 @@ rédigent de la même façon. Un fichier correspond à une seule section du Prog
 Il faut donc deux fichiers texte, un pour le "Programme" et un pour le "En continu".
 De même que pour le programme, seul l'extension \textbf{txt} est acceptée.
 
-\subsubsection{Galeries}
+\subsection{Galeries}
 
 Ces images seront affichées dans la section \textbf{Galeries} du site. Elles sont
 stockées dans un champ image de Drupal dans lequel il est possible de télécharger
@@ -225,7 +228,7 @@ individuellement plusieurs images, avec une limite de 10 images maximum.
 Il est possible de les réordonner ou supprimer individuellement. \\
 Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
-\subsubsection{Captcha Key}
+\subsection{Captcha Key}
 
 Il s'agit d'une chaîne de caractères permettant de sécuriser l'envoi du formulaire
 de contact. Cette clé doit provenir de l'API reCaptcha de Google. Cela permet de
@@ -233,59 +236,59 @@ prévenir de potentielles intrusions de bots, et assurer le bon fonctionnement
 de l'envoi de formulaire au Musée des Beaux Arts de Bordeaux présent dans la
 section \textbf{Contact} du site.\\
 Tout cela est stocké dans un le champ texte de Drupal dont la longueur maximale
-est 255 caractères.
+est de 255 caractères.
 
-\subsubsection{Texte partenaire}
+\subsection{Texte partenaire}
 
 Le texte de remerciements des partenaires est affiché dans la section
 \textbf{Contact} du site. Il est stocké dans un champ texte long par Drupal. \\
+Le texte est traité tel quel, aucune balise HTML n'est acceptée.
 
-\subsubsection{Image partenaire}
+\subsection{Image partenaire}
 
 Cette image est affichée dans la section \textbf{Contact} du site. Elle se place
 juste en-dessous du texte destiné aux remerciements des partenaires.
-L'image est stockée dans un champ image de Drupal.
+L'image est stockée dans un champ image de Drupal. \\
 Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
-\subsubsection{Date et heure}
+\subsection{Date et heure}
 
-La description de la soirée est un champ texte stocké par Drupal. Il est
-modifiable par une personne ayant les droits d'administration sur Drupal.
-L'utilisateur n'a aucun contrôle sur la forme prise par la date, mise à part la
-façon dont il insère la date. \\
-\textbf{exemple :} DD/MM/YYYY ou Day DD Month YYYY. \\
+La description de la soirée est un champ texte stocké par Drupal, dont la longueur
+maximale est de 30 caractères. Le texte est traité tel quel, l'affichage dépendra
+de la façon dont l'administrateur Drupal l'a défini. \\
+\textbf{exemple :} DD/MM/YYYY ou Day DD Month YYYY
 
-L'heure est un autre champ texte, stocké et modifiable de la même façon que la
-date.
-L'utilisateur n'a, là aussi, aucun contrôle sur la forme au-delà de la façon
-dont l'heure est insérée dans le champ texte.
-\textbf{exemple :} HH : MM - HH : MM \\
 
-\subsubsection{Contact téléphone}
+L'heure est également stocké dans un champ texte géré par Drupal. La longueur
+maximale est de 25 caractères. Le texte est traité tel quel, l'affichage dépendra
+de la façon dont l'administrateur Drupal l'a défini. \\
+\textbf{exemple :} HH : MM - HH : MM
+
+\subsection{Contact téléphone}
 
 Le numéro de téléphone de contact est affiché dans la partie informations de
-contact dans la section \textbf{Contact}, en bas de page. \\
+contact dans la section \textbf{Contact}, en bas de page.
 Le numéro de téléphone est stocké dans un champ texte par Drupal, d'une taille
-maximale de 20 caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
+maximale de 20 caractères. Il s'agit de texte simple, aucune balise HTML est autorisée.
 
-\subsubsection{Contact mail}
+\subsection{Contact mail}
 
 L'adresse mail de contact est affichée dans la partie informations de
-contact dans la section \textbf{Contact}, en bas de page. \\
+contact dans la section \textbf{Contact}, en bas de page.
 L'adresse mail de contact est stockée dans un champ texte par Drupal, d'une taille
-maximale de 255 caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
+maximale de 255 caractères. Il s'agit de texte simple, aucune balise HTML est autorisée.
 
-\subsubsection{Réseaux sociaux}
+\subsection{Réseaux sociaux}
 
-En ce qui concerne les réseaux sociaux, ils sont stockés de manière distincte
-dans 3 champs texte de Drupal (255 caractères au maximum). Chaque champ texte
-correspond à un réseau social: Facebook, Twitter et Instagram. Ces chaînes de
-caractères correspondent aux URL des comptes du Musée des Beaux Arts.
+Chaque réseau social est stocké de manière individuelle dans un champ texte de
+Drupal (255 caractères au maximum). Chaque champ texte correspond à un réseau
+social : Facebook, Twitter et Instagram. Ces champs texte correspondent aux liens
+vers les réseaux sociaux du Musée des Beaux Arts. \\
+\textbf{exemple : } https://www.facebook.com/bordeaux.musee.ba
 
+\subsection{Copyright}
 
-\subsubsection{Copyright}
-
-Le texte de copyright est affiché tout en bas de page. \\
+Le texte de copyright est affiché tout en bas de page.
 Il est stocké dans un champ texte par Drupal, d'une taille maximale de 255
 caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
 
@@ -374,6 +377,6 @@ Le site doit être accessible depuis plusieurs plateformes, le site doit s'adapt
 \section*{Annexe 2 : Aperçu du site statique retenu}
 
 \vspace{0.4cm}
-\includegraphics[scale=0.35]{preview.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{preview2.png}
 
 \end{document}
