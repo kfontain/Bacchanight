@@ -229,7 +229,8 @@ Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 Il s'agit d'une chaîne de caractères permettant de sécuriser l'envoi du formulaire
 de contact. Cette clé doit provenir de l'API reCaptcha de Google. Cela permet de
 prévenir de potentielles intrusions de bots, et assurer le bon fonctionnement
-de l'envoi de formulaire au Musée des Beaux Arts de Bordeaux.
+de l'envoi de formulaire au Musée des Beaux Arts de Bordeaux présent dans la
+section \textbf{Contact} du site.\\
 Tout cela est stocké dans un le champ texte de Drupal dont la longueur maximale
 est 255 caractères.
 
@@ -237,7 +238,6 @@ est 255 caractères.
 
 Le texte de remerciements des partenaires est affiché dans la section
 \textbf{Contact} du site. Il est stocké dans un champ texte long par Drupal. \\
-A COMPLETER.
 
 \subsubsection{Image partenaire}
 
@@ -289,18 +289,12 @@ Il est stocké dans un champ texte par Drupal, d'une taille maximale de 255
 caractères. Il s'agit de texte pur, aucune balise HTML est autorisée.
 
 %-------------------------------------------------------------------------------
-% Besoins non fonctionnels
+% jdeploi
 %-------------------------------------------------------------------------------
 
-\subsection*{Hébergement}
-Prise de contact avec la Mairie de Bordeaux, actuellement chargée de
-l'hébergement du site du Musée des Beaux-Arts.
-
 \subsection*{Déploiement}
-Création de la page en utilisant le système de gestion de contenu Drupal
-(version 7) déjà présent sur le site du Musée des Beaux-Arts.
-Un manuel permettant à une personne ayant de l'expérience avec Drupal
-d'intégrer le site au site actuel du musée devra être fourni.
+La procédure de déploiement est explicitée en détails dans le fichier
+suivant : \textbf{deploiement.pdf}
 
 %-------------------------------------------------------------------------------
 % Besoins non fonctionnels
@@ -310,16 +304,16 @@ d'intégrer le site au site actuel du musée devra être fourni.
 
 \subsection*{Charte graphique}
 
-En ce qui concerne la charte graphique, le musée des Beaux Arts de Bordeaux nous a transmis un document (disponible en annexe) regroupant tous les éléments graphiques (images, polices, logos, etc.) que nous avons intégrés au site.
-
+La charte graphique est fournie par le Musée des Beaux Arts de Bordeaux. Elle définit
+les couleurs, polices utilisées pour le site. Ces paramètres sont modifiables par
+l'intermédiaire de Drupal. \\
 Le site est sous un format One Page. Un site One Page est un site constitué
-d'une seule et même page sur laquelle l'ensemble des informations du site web
+d'une seule et même page sur laquelle l'ensemble des informations du site
 est disponible en scrollant (ou à l'aide d'une barre de navigation).
 
 \subsection*{Accessibilité}
 
 Le site doit être accessible à partir des navigateurs suivants (toutes plateformes confondues):
-%% Ajouter les numéros de versions.
 \begin{center}
 	\begin{tabular}{|l | r|}
 		\hline
@@ -336,7 +330,9 @@ Le site doit être accessible à partir des navigateurs suivants (toutes platefo
 		\hline
 	\end{tabular}
 \end{center}
-Ces navigateurs ont été sélectionnés à partir de leur pourcentage de parts de marché (toutes supérieures à 5\%). Ce pourcentage est une moyenne des pourcentages recueillis sur les sites suivants:
+Ces navigateurs ont été sélectionnés à partir de leur pourcentage de parts de
+marché (toutes supérieures à 5\%). Ce pourcentage est une moyenne des pourcentages
+recueillis sur les sites suivants:
 \begin{itemize}
 	\item StatCounter
 	\item Net MarketShare
@@ -345,11 +341,8 @@ Ces navigateurs ont été sélectionnés à partir de leur pourcentage de parts 
 \end{itemize}
 
 \subsection*{Responsive}
-Puisque le site doit être accessible depuis plusieurs plateformes, le site doit s'adapter à la taille de l'écran.
-
-\subsection*{Léger}
-Le site doit se charger en moins de X secondes, en utilisant une connection à
-X ko/s. (à tester)
+Le site doit être accessible depuis plusieurs plateformes, le site doit s'adapter
+à la taille de l'écran.
 
 %-------------------------------------------------------------------------------
 % Retro planning
@@ -358,8 +351,12 @@ X ko/s. (à tester)
 \section{Retro planning}
 
 \begin{itemize}
-	\item Version statique pour avant le 21 Mars. (priorité haute)
-	\item Version pérenne pour la fin du semestre. (mi-Avril, à confirmer)
+	\item Septembre 2016 : Création des groupes, choix du projet.
+	\item Octobre/Novembre 2016 : Conception et choix des technologies.
+	\item Décembre 2016 : Prise en main de Drupal, création d'une maquette.
+	\item Janvier 2017 : Approfondissement de l'utilisation de Drupal.
+	\item Février/Mars 2017 : Développement de la version statique du site.
+	\item Avril 2017 : Développement de la version sous Drupal en vue d'un déploiement.
 \end{itemize}
 
 %-------------------------------------------------------------------------------
@@ -368,7 +365,7 @@ X ko/s. (à tester)
 
 \newpage
 
-\section{Annexe : Maquette}
+\section{Annexe : Maquette du premier semestre}
 
 \vspace{0.4cm}
 \includegraphics[scale=0.75]{maquette.jpg}
