@@ -1,0 +1,118 @@
+- Font :
+    field_font
+    File - File
+    bacchanight/font
+
+- Couleur 1 et 2 :
+    field_couleur_principale field_couleur_secondaire
+    Text - Text field
+    size : 7
+    #FFFFFF
+
+- Images :
+    field_image_fond field_image_description
+    Image - Image
+    .gif .png .jpg .jpeg (default)
+    bacchanight/img
+
+- Description :
+    field_description
+    Long Text - Text area
+    balises : <strong> <br> <p>
+
+
+- Programme :
+    field_program
+    File - File
+    .txt (default)
+    bacchanight/txt
+
+- Image programme :
+    field_image_program
+    Image - Image
+    .gif .png .jpg .jpeg (default)
+    bacchanight/img
+
+- En continu :
+    field_continu
+    comme Programme
+
+- Galeries :
+    field_galeries
+    Image - Image
+    not required
+    0 à 10 images
+    .gif .png .jpg .jpeg (default)
+    bacchanight/img
+
+- Captcha :
+    field_captcha_key
+    Text - Text field
+    not required
+    size : 255
+
+- Texte partenaire :
+    field_texte_partenaire
+    comme Description
+
+- Image partenaire :
+    field_image_partenaire
+
+- Date et heure :
+    Texte - Text field
+    field_date
+    date size : 30
+    field_time
+    time size : 25
+
+- Téléphone :
+    field_phone
+    Texte
+    size : 20
+
+- Mail :
+    field_mail
+    Texte
+    size : 255
+
+- Facebook & co :
+    field_facebook field_insta field_twitter
+    Texte
+    size : 255 255 255
+
+- Copyright :
+    field_copyright
+    Texte
+    size : 255
+
+- Image BX :
+    field_image_bordeaux
+    Image
+    b/img
+
+- Image MBA :
+    field_image_mba
+    Image
+    b/img
+
+- Google analytics :
+    field_ga
+    texte
+    not required
+    size : 20
+
+DEPLOIMENT 1 :
+    - Créer un nouveau type de content avec les champs comme dessus.
+    - Créer un nouveau contenu du type créer précédemment.
+    - Copier le fichier dans <depot_drupal>/themes/<mon_theme>/templates.
+    - Renommer le fichier <page--node--[NUMERO DU NOEUD].tpl.php
+    - CLEAR ALL CACHES.
+
+DEPLOIMENT 2 :
+    - Créer un nouveau type de content avec les champs comme dessus.
+    - Créer un nouveau contenu du type créer précédemment.
+    - Copier la fonction donnée dans le fichier <depot_drupal>/themes/<mon_theme>/template.php sauf si elle existe déjà.
+    - Cette fonction permet de rajouter comme nom de template possible page--[NOM TYPE CONTENT].tpl.php.
+    - Copier le fichier dans <depot_drupal>/themes/<mon_theme>/templates.
+    - Renommer le fichier <page--[NOM TYPE CONTENT].tpl.php
+    - CLEAR ALL CACHES.
