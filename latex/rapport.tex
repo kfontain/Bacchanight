@@ -119,6 +119,28 @@ Le site doit permettre l'accès aux informations suivantes :
 
 \vspace{0.5cm}
 
+\section{Second semestre}
+
+Au départ de ce second semestre, nous n'étions plus que 3 à continuer ce projet.
+Un second groupe a décidé de réaliser le même projet que nous. Conjointement,
+et avec l'approbation de M. Blin, il a été convenu que chaque groupe devrait
+réaliser une version statique du site que nous souhaiterions réaliser, en se
+détachant totalement du CMS Drupal. Le but de cette démarche était de proposer au
+Musée des Beaux Arts deux versions du site, et que l'une des ces deux versions serait
+choisie pour que nous puissions travailler efficacement sur celle-ci.\\
+Vous pouvez retrouvez la version retenue à l'adresse suivante:
+
+\vspace{0.5cm}
+
+\textbf{mba.emi.u-bordeaux.fr}\\
+
+\par
+Il s'agit du site statique proposé par l'autre groupe. Dès lors que le choix de
+l'apparence du site était fixé, nous nous sommes plongés sur les différentes tâches
+inhérentes aux besoins fonctionnels du site, tout en essayant de rester au plus
+proche de l'aspect graphique retenu.
+
+
 \subsection{Champs modifiables}
 
 \subsubsection{Couleur principale}
@@ -204,7 +226,12 @@ Les extensions suivantes sont acceptées : \textbf{png, gif, jpg, jpeg}.
 
 \subsubsection{Captcha Key}
 
-TODO.
+Il s'agit d'une chaîne de caractères permettant de sécuriser l'envoi du formulaire
+de contact. Cette clé doit provenir de l'API reCaptcha de Google. Cela permet de
+prévenir de potentielles intrusions de bots, et assurer le bon fonctionnement
+de l'envoi de formulaire au Musée des Beaux Arts de Bordeaux.
+Tout cela est stocké dans un le champ texte de Drupal dont la longueur maximale
+est 255 caractères.
 
 \subsubsection{Texte partenaire}
 
@@ -249,7 +276,11 @@ maximale de 255 caractères. Il s'agit de texte pur, aucune balise HTML est auto
 
 \subsubsection{Réseaux sociaux}
 
-TODO.
+En ce qui concerne les réseaux sociaux, ils sont stockés de manière distincte
+dans 3 champs texte de Drupal (255 caractères au maximum). Chaque champ texte
+correspond à un réseau social: Facebook, Twitter et Instagram. Ces chaînes de
+caractères correspondent aux URL des comptes du Musée des Beaux Arts.
+
 
 \subsubsection{Copyright}
 
