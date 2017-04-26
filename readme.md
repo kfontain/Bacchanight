@@ -5,7 +5,7 @@ Projet de communication transdisciplinaire : Bacchanight
 Groupe :
 - Guillaume CHARLET
 - Kenji FONTAINE
-- Gauthier LARMARQUE
+- Gauthier LAMARQUE
 
 Accès au site:
 
